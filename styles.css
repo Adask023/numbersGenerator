@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  margin-top: 2em;
+}
+
+.max-width {
+  max-width: 900px;
+  margin: auto
+}
+
+#column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#column div p span {
+  display: inline-block;
+  width: 50%;
+  padding: 0 0.4rem ;
+}
