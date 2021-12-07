@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #282828;
 }
 
 .app {
@@ -9,25 +11,56 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.content {
-  margin-top: 2em;
+  color: #33ff00;
 }
 
 .max-width {
   max-width: 900px;
-  margin: auto
+  margin: auto;
+}
+
+.content {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+}
+
+
+
+.content>p {
+  margin-bottom: 1rem;
+}
+
+.content>p button {
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  color: #33ff00;
+  border: 2px dashed transparent;
+  transition: 0.2s ease all;
+
+}
+
+.content > p button:hover {
+  border: 2px dashed #33ff00;
 }
 
 #column {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 0.4rem;
+  border-top: 2px solid #33ff00;
 }
 
 #column div p span {
   display: inline-block;
   width: 50%;
-  padding: 0 0.4rem ;
+  min-width: 45px;
+  text-align: center;
+  padding: 0 0.4rem;
 }
